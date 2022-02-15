@@ -16,13 +16,13 @@ public class IframeStep {
     }
     @When("user locate iframe")
     public void user_locate_iframe() {
-        Driver.getDriver().switchTo().frame(iframeStep.iframe);
+        Driver.getDriver().switchTo().frame(iframeStep.iframeId);
         Browser_Util.waitFor(2);
 
     }
     @Then("user should able to get attribute of iframe")
     public void user_should_able_to_get_attribute_of_iframe() {
-        String name = iframeStep.attribute.getAttribute("style");
+        String name = iframeStep.attributeOfIframe.getAttribute("style");
         Assert.assertEquals("background-color: transparent;",name);
     }
 }
