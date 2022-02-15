@@ -9,10 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Browser_Util {
 
@@ -118,6 +115,21 @@ public class Browser_Util {
         }
 
 
+    public static List<String> switchingWindows(Set<String> windows){
+
+        List<String> allTitles = new ArrayList<>();
+
+        for(String eachWindow: windows){
+
+            Driver.getDriver().switchTo().window(eachWindow);
+
+            waitFor(3);
+            allTitles.add(Driver.getDriver().getTitle());
+        }
+
+        return allTitles;
+
+    }
 
 
 

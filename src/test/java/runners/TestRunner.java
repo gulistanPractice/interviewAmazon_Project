@@ -12,9 +12,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",  // store the failed scenario into rerun.txt
                 "me.jvt.cucumber.report.PrettyReports:target" //this is fancy report
         }
-        ,publish=true
+        ,publish=false
         ,dryRun = false
-        //,tags = "@ui"
+        ,tags = "@EtsyFeature"
 
 
 )
