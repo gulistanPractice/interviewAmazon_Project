@@ -1,6 +1,6 @@
 
 
-@ui
+  @smoke
   Feature: Iframe functionality
 
     Scenario: User can check iframe functionality
