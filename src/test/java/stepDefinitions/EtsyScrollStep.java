@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import pages.EtsyScroll;
 import utilities.Browser_Util;
 import utilities.ConfigReader;
@@ -16,6 +15,7 @@ public class EtsyScrollStep {
     String etsyWindow;
     List<String> actualTitles;
     Set<String> allWindow;
+
 
     @Given("user navigates to Etsy.com webpage")
     public void user_navigates_to_etsy_com_webpage() {
@@ -40,9 +40,9 @@ public class EtsyScrollStep {
     @Then("user should able to switch windows and get title of each elements")
     public void user_should_able_to_switch_windows_and_get_title_of_each_elements(List<String> expectedTitle) {
 
-        Browser_Util.waitFor(2);
-        actualTitles = Browser_Util.switchingWindows(allWindow);
-        System.out.println(actualTitles);
+        Browser_Util.waitFor(4);
+        actualTitles = Browser_Util.switchingWindows(etsyScroll.allWindowHandle());
+       // System.out.println(actualTitles);
 
         for (int i = 0, j=0; i <actualTitles.size(); i++, j++) {
 

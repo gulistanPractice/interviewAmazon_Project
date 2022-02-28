@@ -46,6 +46,7 @@ public class AmazonLogin {
 
     public String helloPeople(){
        return helloSign.getText();
+       //hello
 
     }
 

@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         }
         ,publish=false
         ,dryRun = false
-        ,tags = "@EtsyFeature"
+        ,tags = "@ebayCreateAccount"
 
 
 )

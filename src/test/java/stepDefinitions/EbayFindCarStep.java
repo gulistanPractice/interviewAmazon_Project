@@ -7,7 +7,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 
-public class EbayCreate {
+public class EbayFindCarStep {
     EbayCreateAccount ebayCreateAccount = new EbayCreateAccount();
 
     @Given("user on the cars and truck page")

@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Browser_Util;
 import utilities.Driver;
 
-import java.lang.annotation.ElementType;
 import java.util.List;
 import java.util.Set;
 
@@ -25,7 +24,7 @@ public class EtsyScroll {
     public  WebElement instagramIcon;
 
     public void scroll(){
-        JavascriptExecutor jse =(JavascriptExecutor)Driver.getDriver();
+        JavascriptExecutor jse =(JavascriptExecutor) Driver.getDriver();
         jse.executeScript("arguments[0].scrollIntoView(true)",instagramIcon);
     }
 
